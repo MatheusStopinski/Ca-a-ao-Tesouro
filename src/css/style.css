@@ -1,0 +1,338 @@
+@import url('https://googleapis.com');
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: #efe8d4;
+    font-family: Georgia, serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.caveira {
+    width: 70px;
+}
+
+.card {
+    background: #f3ead7;
+
+    border: 2px solid #dccba0;
+
+    border-radius: 25px;
+
+    padding: 35px 30px;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.bussola {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #3d2916;
+
+    font-size: 2rem;
+
+    line-height: 1.2;
+
+    margin-top: 20px;
+}
+
+.subtitulo {
+    font-size: 1.8rem;
+
+    color: #6b5545;
+
+    margin: 35px 0;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border-radius: 15px;
+    border: 3px solid #d2ac37;
+    font-size: 1rem;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+#erro {
+    color: #9d3c2c;
+
+    min-height: 0;
+
+    margin: 0 0 10px 0;
+
+    font-size: 1.4rem;  
+
+}
+
+button {
+    width: 100%;    
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 2rem;
+
+    font-family: "Pirata One";
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:disabled {
+    background: #d7c18c;
+
+    color: #7a6b4a;
+
+    cursor: default;
+}
+
+button.ativo {
+    background: #c59d17;
+
+    color: #2b1a00;
+}
+
+.mapa-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #efe8d4;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+.mapa {
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.botoes-mapa {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: -80px;
+    
+}
+
+.botao-voltar,
+.botao-continuar {
+
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    font-size: 1.5rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0px;
+
+    font-family: "Pirata One", cursive;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: #2b1a00 2px 14px 5px;
+}
+
+.botao-voltar {
+
+    flex: 1;
+
+    background: #f2ebda;
+
+    color: #5a4728;
+
+    border: 2px solid #d6bc63;
+}
+
+.botao-voltar:hover {
+
+    transform: scale(1.02);
+}
+
+.botao-continuar {
+
+    flex: 2;
+
+    background: #c39a15;
+
+    color: #2c1a00;
+}
+
+.botao-continuar:hover {
+
+    transform: scale(1.02);
+}
+
+.tela3-container {
+
+    min-height: 100vh;
+
+    background: #efe8d4;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+}
+
+.botao-voltar-tela3 {
+
+    width: 120px;
+
+    height: 45px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(#b58f1b, #cfa93b);
+
+    color: #2c1a00;
+
+    font-size: 1rem;
+
+    font-family: "Pirata One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    cursor: pointer;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-tela3 {
+
+    width: 100%;
+
+    max-width: 350px;
+
+    max-height: 630px;
+
+    background: #F3EAD7;
+
+    border: 3px solid #c39216a2;
+
+    border-radius: 25px;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+    box-sizing: border-box;
+}
+
+.texto-tela3 {
+
+    color: #000;
+
+    margin-top: -30px;
+
+    font-size: 1.7rem;
+
+    font-weight: bold;
+
+    font-family: "Pirata One", cursive;
+
+    line-height: 1.5;
+}
+
+.caveira-tela3 {
+
+    width: 75px;
+
+}
+
+.botao-jornada {
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    max-width: 320px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(#b58f1b, #cfa93b);
+
+    color: #2c1a00;
+
+    font-size: 1.6rem;
+
+    font-family: Pirata One, cursive;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow: 2 8px 10px rgba(0,0,0,0.15);
+}
