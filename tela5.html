@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próxima Parte do Mapa</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <div class="tela5-container">
+
+        <!-- Detalhe superior -->
+        <div class="linha-topo">
+            <div class="linha"></div>
+
+            <div class="linha"></div>
+        </div>
+
+        <!-- Cartão -->
+        <div class="card-tela5">
+
+            <img src="src/img/bussula.png"
+                 alt="Bússola"
+                 class="bussola-tela5">
+
+            <h1 class="titulo-tela5">
+                Aventureira!
+            </h1>
+
+            <p class="subtitulo-tela5">
+                Digite a próxima senha!
+            </p>
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite a senha..."
+            >
+
+            <p id="erro"></p>
+
+            <button
+                id="desvendar"
+                disabled
+                onclick="verificarSenhaTesouro()">
+
+                Desvendar
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="src/js/script.js"></script>
+
+</body>
+
+</html>
